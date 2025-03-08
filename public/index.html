@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Estoque</title>
+    <title>Estoque de Produtos</title>
 </head>
 <body>
     <h1>Estoque de Produtos</h1>
+
+    <h2>Cadastrar Produto</h2>
     <form id="cadastroForm">
-        <input type="text" id="nome" placeholder="Nome">
-        <input type="number" id="preco" placeholder="Preço">
-        <input type="text" id="descricao" placeholder="Descrição">
-        <input type="number" id="quantidade" placeholder="Quantidade">
+        <input type="text" id="nome" placeholder="Nome"><br>
+        <input type="number" id="preco" placeholder="Preço"><br>
+        <input type="text" id="descricao" placeholder="Descrição"><br>
+        <input type="number" id="quantidade" placeholder="Quantidade"><br>
         <button type="submit">Cadastrar</button>
     </form>
 
     <h2>Produtos</h2>
-    <button>Ver Produtos</button>
+    <button onclick="carregarProdutos()">Ver Produtos</button>
     <ul id="listaProdutos"></ul>
 
-    <script>
+    <h2>Realizar Venda</h2>
+    <form id="vendaForm">
+        <input type="number" id="vendaId" placeholder="ID do Produto"><br>
+        <input type="number" id="vendaQuantidade" placeholder="Quantidade"><br>
+        <button type="submit">Vender</button>
+    </form>
 
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
